@@ -10,10 +10,19 @@
 
 @implementation ViewController
 
+@synthesize myLabel = _myLabel;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - IBActions
+
+- (IBAction)changeLabel:(id)sender {
+    
+    self.myLabel.text = @"Goodbye World!";
 }
 
 #pragma mark - View lifecycle

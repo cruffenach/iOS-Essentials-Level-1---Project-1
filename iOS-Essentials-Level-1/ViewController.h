@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UILabel *myLabel;
+
+- (IBAction)changeLabel:(id)sender;
+
 @end
